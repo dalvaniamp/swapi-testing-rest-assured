@@ -1,6 +1,6 @@
 Suite de teste para a REST API <a href="https://swapi.co/">SWAPI - The Star Wars API</a>, utilizando <a href="https://github.com/rest-assured">REST Assured</a>.</br>
 </br>
-- Para rodar os testes rode o seguinte comando: </br>
+- Para rodar os testes, execute o seguinte comando: </br>
 ```
 mvn test
 ```
