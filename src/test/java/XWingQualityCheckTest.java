@@ -9,8 +9,9 @@ public class XWingQualityCheckTest extends BaseTest{
 	@BeforeClass
 	public static void setUp()
 	{			
-		Response response = getRequestResponse("starships/12/");	
-		ship=response.body().as(Ship.class);
+		Response response = getRequestResponse("starships/12/");
+		ship.name=response.path("name");
+		ship.filmCount=response.path("films.size()");
 	}
 		
 	@Test
@@ -22,7 +23,7 @@ public class XWingQualityCheckTest extends BaseTest{
 	@Test
 	public void shipWereInMoreThan3FilmsTest()
 	{
-		Assert.assertTrue(ship.films.length>=2);
+		Assert.assertTrue(ship.filmCount>=3);
 	}
 }
 	
