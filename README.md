@@ -5,7 +5,7 @@ Suite de teste para a REST API <a href="https://swapi.co/">SWAPI - The Star Wars
   - <a href="https://maven.apache.org/">Maven</a></br>
 </br>
 
-- Para rodar os testes, execute o seguinte comando: </br>
+- Para rodar os testes, abra o terminal na pasta raiz do projeto e execute o seguinte comando: </br>
 ```
 mvn test
 ```
